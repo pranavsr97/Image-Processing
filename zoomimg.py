@@ -132,5 +132,8 @@ if __name__=="__main__":
 	final_img=zoom(path,x_coord,y_coord,scale)
 	cv2.imshow('Original',img)
 	cv2.imshow('Final',final_img)
+	
+	# Zoomed image is saved as 'zoom_img.jpg'
+	cv2.imwrite('zoom_img.jpg',final_img)
 	cv2.waitKey(0)
 	cv2.destroyAllWindows()
