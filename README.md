@@ -1,4 +1,4 @@
-# Image-Processing-Assignment
+# Image-Processing
 Distortion and zooming of images done using Python and OpenCV
 
 
