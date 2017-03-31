@@ -48,17 +48,6 @@ def distortimg(imgpath,x1_coord,y1_coord,x2_coord,y2_coord,x3_coord,y3_coord,x4_
 		outpts[i][0]-=lowx
 		outpts[i][1]-=lowy
 
-	'''
-	outpts[0][0]-=lowx
-	outpts[1][0]-=lowx
-	outpts[2][0]-=lowx
-	outpts[3][0]-=lowx
-
-	outpts[0][1]-=lowy
-	outpts[1][1]-=lowy
-	outpts[2][1]-=lowy
-	outpts[3][1]-=lowy
-	'''
 
 	# Finding max of x and y-coords, in new shifted scale
 	highx=max(outpts[0][0],outpts[1][0],outpts[2][0],outpts[3][0])
@@ -93,7 +82,7 @@ if __name__=="__main__":
 	cv2.imshow('Image',img)
 	cv2.imshow('Fimg',fimg)
 	
-	# Zoomed image is saved as 'zoom_img.jpg'
-	cv2.imwrite('zoom_img.jpg',fimg)
+	# Zoomed image is saved as 'distort_img.jpg'
+	cv2.imwrite('distort_img.jpg',fimg)
 	cv2.waitKey(0)
 	cv2.destroyAllWindows()
