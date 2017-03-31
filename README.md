@@ -32,4 +32,4 @@ The format of the co-ordinates given for both the programs, should be as follows
 
 **NOTE 2:**
 
-The second program takes time for execution, as it traverses through every pixel of the area of interest of the image. It could take around 20 seconds to 50 seconds for a medium sized image and with scale of zooming between 2 to 5
+The second program takes time for execution, as it traverses through every pixel of the area of interest of the image. It could take around 10 seconds to 25 seconds for a medium sized image and with scale of zooming between 2 to 5
