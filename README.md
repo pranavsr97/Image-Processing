@@ -19,7 +19,7 @@ Zoooming an image, given the pivot co-ordinates and scale of zooming. No OpenCV 
 
 _To run:_
 
-python zooming.py <img_path_name> <x_coord> <y_coord> <scale_of_zooming>
+python zoomimg.py <img_path_name> <x_coord> <y_coord> <scale_of_zooming>
 
 **NOTE:** 
 
