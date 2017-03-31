@@ -4,7 +4,7 @@ Distortion and zooming of images done using Python and OpenCV
 
 **Program 1: Distorting image**
 
-Given an image, the program distorts ot to the given co-ordinates. The program accepts the image path, and the co-ordinates as arguments. Geometric transformation was done using OpenCV's inbuilt library, getPerspectiveTransform and warpPerspective.
+Given an image, the program distorts the image according to the given co-ordinates. The program accepts the image path, and the co-ordinates as arguments. Geometric transformation was done using OpenCV's inbuilt library, getPerspectiveTransform and warpPerspective.
 On running the program, the image is distorted as per the given co-ordinates and saved as final.jpg
 
 _To run:_
@@ -22,3 +22,14 @@ _To run:_
 python zooming.py <img_path_name> <x_coord> <y_coord> <scale_of_zooming>
 
 **NOTE:** 
+
+The format of the co-ordinates given for both the programs, should be as follows:-
+
+- No commas between the x-coordinate and y-coordinate
+- The x-coordinate corresponds to the **width** of the image, and hence the max value that x can take is (width-1)
+- The y-coordinate corresponds to the **height** of the image, and hence the max value that y can take is (height-1)
+- The co-ordinate pairs (A,B,C,D) given for the first program, should be such that A,B,C,D are in clockwise direction or anti-clockwise direction. The order shouldn't be messed up.
+
+**NOTE 2:**
+
+The second program takes time for execution, as it traverses through every pixel of the area of interest of the image. It could take around 20 seconds to 50 seconds for a medium sized image and with scale of zooming between 2 to 5
