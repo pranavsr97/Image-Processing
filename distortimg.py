@@ -92,5 +92,8 @@ if __name__=="__main__":
 
 	cv2.imshow('Image',img)
 	cv2.imshow('Fimg',fimg)
+	
+	# Zoomed image is saved as 'zoom_img.jpg'
+	cv2.imwrite('zoom_img.jpg',fimg)
 	cv2.waitKey(0)
 	cv2.destroyAllWindows()
