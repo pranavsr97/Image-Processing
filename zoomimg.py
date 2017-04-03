@@ -126,7 +126,7 @@ if __name__=="__main__":
 	# Pivot co-ordinates and scale are given
 	x_coord = int(sys.argv[2])
 	y_coord = int(sys.argv[3])
-	scale = int(sys.argv[4])
+	scale = float(sys.argv[4])
 
 	# Final image is got
 	final_img=zoom(path,x_coord,y_coord,scale)
